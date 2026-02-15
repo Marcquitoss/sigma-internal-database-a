@@ -10,7 +10,7 @@ CREATE TABLE miembro (
     carrera VARCHAR(50), 
     curso VARCHAR(20) CHECK (curso IN ('1', '2', '3', '4', '5')),
     tlf VARCHAR(15),
-    cargo VARCHAR(20) DEFAULT 'Socio' CHECK (cargo IN ('Presidente', 'Vicepresidente', 'Secretario', 'Tesorero', 'Vocal', 'Socio'))
+    cargo VARCHAR(20) DEFAULT 'Socio' CHECK (cargo IN ('Presidente', 'Vicepresidente'))
 );
 
 -- Restricción solo un presidente
